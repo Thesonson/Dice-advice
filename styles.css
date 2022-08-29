@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato&family=Manrope:wght@800&family=Poppins&family=Ubuntu+Condensed&display=swap');
+:root{
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --Darkbule: hsl(218, 23%, 16%);
+    --GrayishBlue: hsl(215, 26%, 28%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --LightCyan: hsl(193, 38%, 86%);
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: none;
+    padding: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background:var(--DarkGrayishBlue);
+    font-size: 16px;
+    padding: 1.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 0.1px);
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    margin-top: 3rem;
+    
+}
+
+p{
+    font-size: 28px;
+    line-height: 1.5;
+    text-align: center;
+}
+.container h3{
+    color: var(--NeonGreen);
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%) ;
+}
+img{
+    max-width: 100%;
+}
+.container p{
+    margin-bottom: 2rem;
+    color: var(--LightCyan);
+}
+.container{
+    background-color: var(--GrayishBlue);
+    padding: 1.25rem 1.25rem 3rem;
+    border-radius: 1rem;
+}
+
+.container .line img {
+    margin-bottom: 1rem;
+}
+
+.container button{
+    background-color: var(--NeonGreen);
+    padding: 1.25rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s ease-in-out ;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container button:hover{
+    background-color: hsl(150, 53%, 44%);
+}
+
+
+ .line{
+    background-color: var(--GrayishBlue);
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:500px){
+    .container{
+        max-width: 480px;
+    }
+  
+}
